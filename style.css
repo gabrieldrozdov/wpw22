@@ -59,10 +59,6 @@ header {
 	grid-template-columns: 1fr;
 	grid-gap: 40px;
 }
-nav {
-	position: sticky;
-	top: 120px;
-}
 a {
 	color: var(--black);
 	transition: opacity .2s;
@@ -142,14 +138,14 @@ strong {
 /* Headings */
 .heading-sticky {
 	width: 100%;
-	background-color: var(--black);
-	color: var(--yellow);
 	text-align: center;
 	position: sticky;
 	top: 0;
 	z-index: 100;
 }
 .heading-sticky h2 {
+	background-color: var(--black);
+	color: var(--yellow);
 	padding: 20px;
 }
 .heading-large {
@@ -227,7 +223,6 @@ strong {
 .weeks {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2px;
 }
 .weeks a {
 	text-transform: uppercase;
@@ -248,7 +243,6 @@ strong {
 .weeks-alt {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 2px;
 }
 #week-return {
 	background-color: var(--black);
@@ -299,6 +293,10 @@ strong {
 }
 
 /* Syllabus */
+.syllabus-nav {
+	position: sticky;
+	top: 120px;
+}
 .syllabus-nav li {
   list-style-type: '‣ ';
   margin-bottom: 20px;
@@ -310,6 +308,44 @@ strong {
 }
 .syllabus-nav li a:hover {
 	color: var(--yellow);
+}
+.syllabus-menu {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-variation-settings: "wght" 800, "slnt" 0;
+	letter-spacing: .1em;
+	line-height: 1em;
+	display: none;
+	background-color: var(--yellow);
+}
+.syllabus-menu-btn {
+	background-color: var(--yellow);
+	border-bottom: 2px solid var(--black);
+	transition: .2s;
+	padding: 10px;
+	cursor: pointer;
+}
+.syllabus-menu-btn:hover {
+	background-color: black;
+	color: var(--yellow);
+}
+.syllabus-menu-btn:active {
+	opacity: .5;
+}
+.syllabus-menu-links {
+	background-color: var(--white);
+	border-bottom: 2px solid var(--black);
+	display: none;
+}
+.syllabus-menu-links a {
+	display: inline-block;
+	text-decoration: none;
+	transition: .2s;
+	padding: 10px;
+	width: 100%;
+}
+.syllabus-menu-links a:hover {
+	background-color: var(--yellow);
 }
 .syllabus-content {
 	display: grid;
@@ -530,6 +566,12 @@ footer a {
 	.resources {
 		grid-gap: 40px;
 	}
+	.syllabus-nav {
+		display: none;
+	}
+	.syllabus-menu {
+		display: block;
+	}
 	.syllabus {
 		display: block;
 	}
@@ -540,8 +582,8 @@ footer a {
 	.syllabus-subsection {
 		padding-left: 0;
 	}
-	nav {
-		display: none;
+	.syllabus-subsection ul, .syllabus-subsection ol {
+		padding-left: 22px;
 	}
 	.up {
 		right: 20px;
@@ -553,5 +595,8 @@ footer a {
 		width: 80px;
 		height: 80px;
 		margin-bottom: 20px;
+	}
+	.element {
+		display: none;
 	}
 }

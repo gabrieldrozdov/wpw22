@@ -71,7 +71,7 @@ $(document).scroll(function() {
   }
 });
 
-/* Syllabus navigation activation */
+/* Syllabus navigation section activation */
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -110,4 +110,19 @@ $(window).on('resize scroll', function() {
     $("#nav7").addClass("nav-active");
     $("#nav1, #nav2, #nav3, #nav4, #nav5, #nav6").removeClass("nav-active");
   };
+});
+
+/* Syllabus mobile menu */
+var menuOpen = false;
+$("body").click(function(){
+  if (menuOpen == true) {
+    menuOpen = false;
+    $("#syllabus-menu-links").css("display", "none");
+  }
+});
+$("#syllabus-menu-btn").click(function(){
+  if (menuOpen == false) {
+    $("#syllabus-menu-links").css("display", "block");
+    setTimeout(function() {menuOpen = true;}, 50);
+  }
 });

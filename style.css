@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: 'Maru Proportional';
-	src: url("fonts/GT-Maru-Proportional.ttf") format("TrueType");
+	src: url("assets/GT-Maru-Proportional.ttf") format("TrueType");
 	font-weight: normal;
 	font-style: normal;
 	font-variation-settings: "wght" 400, "slnt" 0;
@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: 'Maru Mono';
-	src: url("fonts/GT-Maru-Mono.ttf") format("TrueType");
+	src: url("assets/GT-Maru-Mono.ttf") format("TrueType");
 	font-weight: normal;
 	font-style: normal;
 	font-variation-settings: "WGHT" 50, "SLNT" 0;
@@ -34,6 +34,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 * {
 	padding: 0;

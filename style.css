@@ -25,6 +25,8 @@
 /* Colors */
 
 :root {
+	--black: black;
+	--white: white;
 	--yellow: #ffb400;
 }
 
@@ -44,7 +46,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	color: black;
+	color: var(--black);
 	font-variation-settings: "wght" 400, "slnt" 0;
 	font-size: 24px;
 	line-height: 1.4em;
@@ -62,8 +64,8 @@ nav {
 	top: 120px;
 }
 a {
-	color: black;
-	transition: .2s;
+	color: var(--black);
+	transition: opacity .2s;
 }
 a:hover {
 	text-decoration: none;
@@ -96,7 +98,7 @@ strong {
 .section-bar {
 	width: 40px;
 	height: 10px;
-	background-color: black;
+	background-color: var(--black);
 	margin-bottom: 20px;
 }
 .section-heading {
@@ -122,16 +124,16 @@ strong {
 	line-height: 1em;
 	text-align: center;
 	text-decoration: none;
-	border: 2px solid black;
+	border: 2px solid var(--black);
 	border-radius: 20px;
 	padding: 20px;
 	width: 100%;
-	color: black;
+	color: var(--black);
 	transition: .2s;
 }
 .link-btn:hover {
 	color: var(--yellow);
-	background-color: black;
+	background-color: var(--black);
 }
 .link-btn:active {
 	opacity: .5;
@@ -140,13 +142,15 @@ strong {
 /* Headings */
 .heading-sticky {
 	width: 100%;
-	background-color: black;
+	background-color: var(--black);
 	color: var(--yellow);
-	padding: 20px;
 	text-align: center;
 	position: sticky;
 	top: 0;
 	z-index: 100;
+}
+.heading-sticky h2 {
+	padding: 20px;
 }
 .heading-large {
 	font-family: Maru Mono, sans-serif;
@@ -210,15 +214,49 @@ strong {
 .heading-main-animation span:nth-child(13) { animation-delay: 2.6s }
 .heading-main-animation span:nth-child(14) { animation-delay: 2.8s }
 
-/* Schedule */
-.schedule {
+/* Weekly Meeting Overview */
+.class {
 	position: relative;
 	background-color: var(--yellow);
 }
-.schedule-header {
+.class-header {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+}
+.weeks {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2px;
+}
+.weeks a {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-variation-settings: "wght" 800, "slnt" 0;
+	letter-spacing: .1em;
+	background-color: var(--yellow);
+	text-decoration: none;
+	border-bottom: 2px solid var(--black);
+	transition: .2s;
+	padding: 10px;
+	line-height: 1em;
+}
+.weeks a:hover {
+	background-color: var(--black);
+	color: var(--yellow);
+}
+.weeks-alt {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 2px;
+}
+#week-return {
+	background-color: var(--black);
+	color: var(--yellow);
+}
+#week-return:hover {
+	background-color: var(--yellow);
+	color: var(--black);
 }
 .agenda div {
 	grid-column: 1 / -1;
@@ -232,7 +270,7 @@ strong {
 	font-size: 48px;
 	padding-bottom: 2px;
 	font-variation-settings: "wght" 800, "slnt" 0;
-	background-color: black;
+	background-color: var(--black);
 	color: var(--yellow);
 	display: flex;
 	align-items: center;
@@ -288,15 +326,21 @@ strong {
 	grid-gap: 60px;
 	padding-top: 120px;
 	margin-top: -120px;
-	z-index: 2;
 }
 .syllabus-subsection {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
 	padding-left: 40px;
+	padding-top: 120px;
+	margin-top: -120px;
 }
-.syllabus-subsection p {
+.syllabus-subsection ul {
+	margin-top: -10px;
+}
+.syllabus-subsection ul li {
+	margin-top: 10px;
+	list-style-type: "- ";
 }
 .syllabus-link {
 	text-decoration: none;
@@ -313,7 +357,7 @@ strong {
 
 /* Footer */
 footer {
-	background-color: black;
+	background-color: var(--black);
 	color: white;
 	text-align: center;
 }
@@ -335,8 +379,8 @@ footer a {
 	width: 160px;
 	height: 160px;
 	position: relative;
-	background-color: black;
-	border: 10px solid black;
+	background-color: var(--black);
+	border: 10px solid var(--black);
 }
 .hand {
 	width: 50%;
@@ -366,7 +410,7 @@ footer a {
 	font-family: Maru Mono, sans-serif;
 	font-size: 24px;
 	font-variation-settings: "wght" 600, "slnt" 0;
-	color: black;
+	color: var(--black);
 	letter-spacing: -.05em;
 	text-decoration: none;
 	display: flex;
@@ -377,14 +421,14 @@ footer a {
 	position: fixed;
 	bottom: -120px;
 	right: 40px;
-	border: 2px solid black;
+	border: 2px solid var(--black);
 	background-color: var(--yellow);
 	border-radius: 50%;
 	z-index: 999;
 	transition: .2s;
 }
 .up:hover {
-	background-color: black;
+	background-color: var(--black);
 	color: var(--yellow);
 }
 .up-show {
@@ -408,8 +452,8 @@ footer a {
   line-height: 1.2em;
   z-index: 200;
   background-color: var(--yellow);
-  color: black;
-  border: 2px solid black;
+  color: var(--black);
+  border: 2px solid var(--black);
   border-radius: 100%;
   animation-name: element;
   animation-direction: alternate;
@@ -422,7 +466,7 @@ footer a {
 }
 .element:hover {
 	color: var(--yellow);
-	background-color: black;
+	background-color: var(--black);
   z-index: 201;
 }
 .element:active {
@@ -430,12 +474,12 @@ footer a {
 }
 
 /* ------------- RESPONSIVE STYLES ------------- */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 	body {
 		font-size: 18px;
 	}
 	.container {
-		grid-gap: 120px;
+		grid-gap: 80px;
 		padding: 60px 20px;
 	}
 	.grid-4 {
@@ -449,7 +493,7 @@ footer a {
 	.link-btn {
 		font-size: 18px;
 	}
-	.schedule-header {
+	.class-header {
 		align-items: flex-start;
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
@@ -465,6 +509,9 @@ footer a {
 	}
 	.heading-medium {
 		font-size: 24px;
+	}
+	.week-name {
+		display: none;
 	}
 	.agenda div{
 		flex-direction: column;

@@ -14,16 +14,22 @@
 
 		<a id="up" href="#top" class="up">Up</a>
 
-		<div class="schedule">
+		<div class="class">
 
 			<div id="class-info" class="heading-sticky">
 				<h2 class="heading-small">Week 1 / Sept. 9, 2022</h2>
+				<div class="weeks">
+					<a href="week1"><span class="week-name">Week </span>1</a>
+					<a href="week2"><span class="week-name">Week </span>2</a>
+					<a href="week3"><span class="week-name">Week </span>3</a>
+					<a href="week4"><span class="week-name">Week </span>4</a>
+				</div>
 			</div>
 
 			<div class="container">
 
 				<header id="header">
-					<div class="schedule-header">
+					<div class="class-header">
 						<div>
 							<span class="heading-small">GRAPH 3188</span>
 							<h1 class="heading-main">
@@ -43,14 +49,13 @@
 					</div>
 					<p>
 						Taught by Gabriel Drozdov {<a href="mailto:gdrozdov@risd.edu">gdrozdov@risd.edu</a>}<br>
-						Based on materials from John Caserta’s <a href="https://wp21.risd.gd/" target="_blank">Fall 2021 class</a><br>
 						<strong>Location:</strong> Design Center 407<br>
 						<strong>Time:</strong> 4 Fridays, 8:00AM – 1:00PM<br>
 						<strong>Office Hours:</strong> TBD
 					</p>
 					<nav class="grid-4">
 						<a href="#syllabus" class="link-btn">Syllabus</a>
-						<a href="#calendar" class="link-btn">Calendar</a>
+						<a href="#schedule" class="link-btn">Schedule</a>
 						<a href="#projects" class="link-btn">Projects</a>
 						<a href="#resources" class="link-btn">Resources</a>
 					</nav>
@@ -180,10 +185,10 @@
 						<nav>
 							<ul class="syllabus-nav">
 								<li><a id="nav1" href="#course-info" class="heading-medium">Course Info</a></li>
-								<li><a id="nav2" href="#goals" class="heading-medium">What is the point of this course?</a></li>
+								<li><a id="nav2" href="#purpose" class="heading-medium">What is the point of this course?</a></li>
 								<li><a id="nav3" href="#structure" class="heading-medium">What will we be doing?</a></li>
 								<li><a id="nav4" href="#assessment" class="heading-medium">How will I be graded?</a></li>
-								<li><a id="nav5" href="#calendar" class="heading-medium">Calendar</a></li>
+								<li><a id="nav5" href="#schedule" class="heading-medium">Schedule</a></li>
 								<li><a id="nav6" href="#projects" class="heading-medium">Projects</a></li>
 								<li><a id="nav7" href="#resources" class="heading-medium">Resources</a></li>
 							</ul>
@@ -194,70 +199,156 @@
 						<section id="course-info" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#course-info" class="syllabus-link">Course Info</a></h3>
+								<h3 class="heading-large">Course Info</h3>
 							</div>
 							<div id="description" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#description" class="syllabus-link">Description</a></h4>
-								<p>In this four-week workshop, students learn about the structure of code to build websites using HTML/CSS and Javascript/jQuery. In-class demos and take-home projects gradually build up programming skills, while also teaching students how to reference code documentation to solve design challenges. Class lectures offer a broad overview of the design+technology field, including topics in computer science, digital design languages (e.g. Material Design), and related technologies like web frameworks (e.g. Bootstrap, React) and commercial platforms (e.g. Webflow, WordPress). Students leave the course as both better programmers and designers, with a new understanding of code’s ability to shape design decisions.</p>
+								<p>At their core, websites are boxes within boxes within boxes of information. But, what are websites actually made of, and what can they do? This four-week workshop explores programming as a dynamic digital material, giving rise to unique design languages and possibilities. Students start as programming novices, reading and writing HTML, CSS, and JavaScript to build up foundational skills in web design and development. Alongside hands-on assignments, weekly lectures expose the field of web programming, including topics in computer science, digital design tools and systems (e.g. Figma, Material Design), and professional web development tools (e.g. Webflow, WordPress, Bootstrap, React). Students emerge with portfolio projects and an ability to effectively collaborate with other web developers.</p>
+								<p>Major elective; Graphic Design majors only.<br>
+								Open to non-majors with permission by the Department.</p>
+								<p>Section 01: 9/9/2022 – 9/30/2022<br>
+								Section 02: 10/7/2022 – 10/28/2022<br>
+								Section 03: 11/4/2022 – 12/3/2022</p>
 							</div>
 							<div id="land-acknowledgement" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#land-acknowledgement" class="syllabus-link">Land Acknowledgement</a></h4>
 								<p>Rhode Island School of Design is built on what is now called College Hill, part of the ancestral homelands of the Narragansett Nation. Indigenous people from many nations — near and far — live, study and work in Providence today. The amplification of Native voices and histories is crucial to rectifying the many violent legacies of colonialism, and we gratefully acknowledge the ongoing critical contributions of Indigenous people across our state, region and nation.</p>
+								<p>Suggested reading: “<a href="https://clas.osu.edu/sites/clas.osu.edu/files/Tuck%20and%20Yang%202012%20Decolonization%20is%20not%20a%20metaphor.pdf" target="_blank">Decolonization is not a metaphor</a>” by Eve Tuck and K. Wayne Yang.</p>
+							</div>
+							<div id="diversity" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#diversity" class="syllabus-link">Diversity and Inclusivity Statement</a></h4>
+								<p>My hope is to make this class a space in which all aspects of personal identity — gender, sexual orientation, abilities, age, body type, socioeconomic circumstances, ethnicity, race, and culture — are accepted, valued, and allowed to influence the work, opinions, language, and learning styles of every student. I have worked, and am working, to show examples and share resources that reflect a diversity of voices; to structure learning activities that allow for a variety of modes of engagement and participation; and to encourage a class culture of respect. These efforts are always a work in progress, and I sincerely welcome any suggestions you might have as I continue to work on them.</p>
+								<p>If you are a student that may require accommodations to complete the requirements of this class, I encourage you to discuss your learning needs with me during the first week of the term. Once an approval letter from the Office of Disability Support Services is submitted, accommodations will be provided. For more information on how to receive accommodations, please contact <a href="https://info.risd.edu/disability-support-services-dss/" target="_blank">Disability Support Services</a>.</p>
+								<p>If you ever experience a situation in which you are made uncomfortable or feel discriminated against for any reason, please don’t hesitate to reach out to RISD’s <a href="https://titleix.risd.edu/institutional-discrimination/" target="_blank">Institutional Discrimation team</a> or <a href="https://titleix.risd.edu/" target="_blank">Title IX department</a>. Additional resources are also available <a href="https://titleix.risd.edu/resources-support/" target="_blank">here</a> for your reference.</p>
 							</div>
 							<div id="colophon" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#colophon" class="syllabus-link">Colophon</a></h4>
-								<p>“GT Maru” is designed by Thierry Blancpain and is exclusively available at Grilli Type.</p>
+								<p>“<a href="https://gt-maru.com/" target="_blank">GT Maru</a>” is a variable typeface designed by Thierry Blancpain and is exclusively available at <a href="https://www.grillitype.com/" target="_blank">Grilli Type</a>.</p>
+								<p>This syllabus is inspired by (and borrows from) both John Caserta’s <a href="https://www.are.na/john-caserta/web-programming-fxypekscqps" target="_blank">Web Programming</a> and Marie Otsuka’s <a href="https://webtype.htmlkitchen.net/" target="_blank">Web Type</a> courses.
 							</div>
 						</section>
 
-						<section id="goals" class="section-wide syllabus-section">
+						<section id="purpose" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#goals" class="syllabus-link">What is the point of this course?</a></h3>
+								<h3 class="heading-large">What is the point of this course?</h3>
 							</div>
-							<div id="" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#" class="syllabus-link">Subsection</a></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec gravida enim. Quisque auctor elit non aliquet eleifend. Duis venenatis tellus at lobortis commodo. Pellentesque blandit nisi finibus, elementum eros ultricies, efficitur nisl. Morbi efficitur tempus tellus, nec facilisis lacus lacinia sed. Nullam sagittis mollis turpis in eleifend. Donec massa leo, lobortis ut sollicitudin id, laoreet vitae arcu. Morbi ornare augue ut blandit lacinia. Quisque ornare nunc in varius mattis. Nulla at enim id eros scelerisque feugiat. Ut sollicitudin, libero eget rhoncus consequat, dolor elit tincidunt lectus, quis ultrices libero leo sit amet risus. Pellentesque vitae feugiat massa.</p>
+							<div id="goals" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#goals" class="syllabus-link">Learning Goals</a></h4>
+								<ul>
+									<li>To dive into the field of web programming, focusing on HTML/CSS and Javascript/jQuery.</li>
+									<li>To experience the nature of code by designing and programming web pages.</li>
+									<li>To discover a wide range of coding projects for both inspiration and education.</li>
+									<li>To engage with the field of design+technology and see how various technologies and practices work together.</li>
+								</ul>
+							</div>
+							<div id="outcomes" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#outcomes" class="syllabus-link">Learning Outcomes</a></h4>
+								<ul>
+									<li>Foundational HTML/CSS programming skills and experience.</li>
+									<li>Ability to read, integrate, and edit pre-existing Javascript code.</li>
+									<li>Ability to understand and utilize reference documentation.</li>
+									<li>Research skills for solving technical challenges.</li>
+									<li>Vocabulary to communicate with web developers and programmers in general.</li>
+									<li>Exposure to design and programming tools for digital platforms.</li>
+								</ul>
+							</div>
+							<div id="philosophy" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#philosophy" class="syllabus-link">Teaching Philosophy</a></h4>
+								<p>My coding background is based in computer science. While designers don’t need all that, I hope to expose the most relevant parts of the computer science world. In the professional world, designers usually hand off schematics for programmers to implement. This isn’t a great process — it prevents productive discussion between designers and developers, and can result in products that neither party is fully happy with. With even just a surface-level understanding of how code works, designers can both make design decisions based on sound logic and effectively communicate with developers throughout the whole process.</p>
 							</div>
 						</section>
 
 						<section id="structure" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#structure" class="syllabus-link">What will we be doing?</a></h3>
+								<h3 class="heading-large">What will we be doing?</h3>
 							</div>
-							<div id="" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#" class="syllabus-link">Subsection</a></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec gravida enim. Quisque auctor elit non aliquet eleifend. Duis venenatis tellus at lobortis commodo. Pellentesque blandit nisi finibus, elementum eros ultricies, efficitur nisl. Morbi efficitur tempus tellus, nec facilisis lacus lacinia sed. Nullam sagittis mollis turpis in eleifend. Donec massa leo, lobortis ut sollicitudin id, laoreet vitae arcu. Morbi ornare augue ut blandit lacinia. Quisque ornare nunc in varius mattis. Nulla at enim id eros scelerisque feugiat. Ut sollicitudin, libero eget rhoncus consequat, dolor elit tincidunt lectus, quis ultrices libero leo sit amet risus. Pellentesque vitae feugiat massa.</p>
+							<div id="breakdown" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#breakdown" class="syllabus-link">Breakdown</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="assignments" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#assignments" class="syllabus-link">Assignments</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="materials" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#materials" class="syllabus-link">Materials</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="critiques" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#critiques" class="syllabus-link">Critiques</a></h4>
+								<p>Placeholder</p>
 							</div>
 						</section>
 
 						<section id="assessment" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#assessment" class="syllabus-link">How will I be graded?</a></h3>
+								<h3 class="heading-large">How will I be graded?</h3>
 							</div>
-							<div id="" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#" class="syllabus-link">Subsection</a></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec gravida enim. Quisque auctor elit non aliquet eleifend. Duis venenatis tellus at lobortis commodo. Pellentesque blandit nisi finibus, elementum eros ultricies, efficitur nisl. Morbi efficitur tempus tellus, nec facilisis lacus lacinia sed. Nullam sagittis mollis turpis in eleifend. Donec massa leo, lobortis ut sollicitudin id, laoreet vitae arcu. Morbi ornare augue ut blandit lacinia. Quisque ornare nunc in varius mattis. Nulla at enim id eros scelerisque feugiat. Ut sollicitudin, libero eget rhoncus consequat, dolor elit tincidunt lectus, quis ultrices libero leo sit amet risus. Pellentesque vitae feugiat massa.</p>
+							<div id="requirements-expectations" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#requirements-expectations" class="syllabus-link">Requirements and Expectations</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="assessment" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#assessment" class="syllabus-link">Assessment</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="attendance-participation" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#attendance-participation" class="syllabus-link">Attendance and Participation</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="plagiarism" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#plagiarism" class="syllabus-link">Plagiarism</a></h4>
+								<p>Placeholder</p>
+							</div>
+							<div id="contact-feedback" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#contact-feedback" class="syllabus-link">Contact and Feedback</a></h4>
+								<p>Placeholder</p>
 							</div>
 						</section>
 
-						<section id="calendar" class="section-wide syllabus-section">
+						<section id="schedule" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#calendar" class="syllabus-link">Calendar</a></h3>
+								<h3 class="heading-large">Schedule</h3>
 							</div>
-							<div id="" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#" class="syllabus-link">Subsection</a></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec gravida enim. Quisque auctor elit non aliquet eleifend. Duis venenatis tellus at lobortis commodo. Pellentesque blandit nisi finibus, elementum eros ultricies, efficitur nisl. Morbi efficitur tempus tellus, nec facilisis lacus lacinia sed. Nullam sagittis mollis turpis in eleifend. Donec massa leo, lobortis ut sollicitudin id, laoreet vitae arcu. Morbi ornare augue ut blandit lacinia. Quisque ornare nunc in varius mattis. Nulla at enim id eros scelerisque feugiat. Ut sollicitudin, libero eget rhoncus consequat, dolor elit tincidunt lectus, quis ultrices libero leo sit amet risus. Pellentesque vitae feugiat massa.</p>
+							<div id="schedule-week1" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#schedule-week1" class="syllabus-link">Week 1</a></h4>
+								<ol>
+									<li>Review syllabus</li>
+									<li><strong>Lecture:</strong> What is web programming? What is *programming*?</li>
+									<li><strong>Tutorial:</strong> Getting set up to code</li>
+									<li><strong>Workshop:</strong> Using HTML to *organize* information</li>
+									<li><strong>Workshop:</strong> Using CSS to make HTML *pretty*</li>
+									<li><strong>Homework:</strong> Start assignment</li>
+								</ol>
+							</div>
+							<div id="schedule-week2" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#schedule-week2" class="syllabus-link">Week 2</a></h4>
+								<ol>
+									<li>TBD</li>
+								</ol>
+							</div>
+							<div id="schedule-week3" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#schedule-week3" class="syllabus-link">Week 3</a></h4>
+								<ol>
+									<li>TBD</li>
+								</ol>
+							</div>
+							<div id="schedule-week4" class="syllabus-subsection">
+								<h4 class="heading-medium"><a href="#schedule-week4" class="syllabus-link">Week 4</a></h4>
+								<ol>
+									<li>TBD</li>
+								</ol>
 							</div>
 						</section>
 
 						<section id="projects" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#projects" class="syllabus-link">Projects</a></h3>
+								<h3 class="heading-large">Projects</h3>
 							</div>
 							<div id="" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#" class="syllabus-link">Subsection</a></h4>
@@ -268,7 +359,7 @@
 						<section id="resources" class="section-wide syllabus-section">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
-								<h3 class="heading-large"><a href="#resources" class="syllabus-link">Resources</a></h3>
+								<h3 class="heading-large">Resources</h3>
 							</div>
 							<div id="" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#" class="syllabus-link">Demos</a></h4>

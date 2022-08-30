@@ -98,7 +98,7 @@ $(window).on('resize scroll', function() {
     $("#nav4").addClass("nav-active");
     $("#nav1, #nav2, #nav3, #nav5, #nav6, #nav7").removeClass("nav-active");
   };
-  if ($("#calendar").isInViewport()) {
+  if ($("#schedule").isInViewport()) {
     $("#nav5").addClass("nav-active");
     $("#nav1, #nav2, #nav3, #nav4, #nav6, #nav7").removeClass("nav-active");
   };

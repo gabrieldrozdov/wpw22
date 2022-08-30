@@ -323,6 +323,7 @@ strong {
 	line-height: 1em;
 	display: none;
 	background-color: var(--yellow);
+	position: relative;
 }
 .syllabus-menu-btn {
 	background-color: var(--yellow);
@@ -342,6 +343,11 @@ strong {
 	background-color: var(--white);
 	border-bottom: 2px solid var(--black);
 	display: none;
+	position: absolute;
+	width: 100%;
+}
+.syllabus-menu-links li{
+	list-style-type: "";
 }
 .syllabus-menu-links a {
 	display: inline-block;
@@ -375,21 +381,25 @@ strong {
 	color: #555;
 }
 .syllabus-subsection p {
-	padding-left: 20px;
+	padding-left: 30px;
+}
+.syllabus-subsection h5 {
+	padding-left: 30px;
 }
 .syllabus-subsection ul {
-	padding-left: 20px;
-	margin-top: -10px;
+	padding-left: 30px;
+	margin-top: -5px;
 }
 .syllabus-subsection ul li {
-	margin-top: 10px;
+	margin-top: 5px;
 	list-style-type: "- ";
 }
 .syllabus-subsection ol {
-	padding-left: 20px;
+	margin-top: -5px;
+	padding-left: 30px;
 }
 .syllabus-subsection ol li {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 .syllabus-link {
 	text-decoration: none;
@@ -559,10 +569,6 @@ footer a {
 	.week-name {
 		display: none;
 	}
-	.agenda div{
-		flex-direction: column;
-		align-items: flex-start;
-	}
 	.agenda-number {
 		align-items: center;
 		min-width: 40px;
@@ -571,7 +577,6 @@ footer a {
 		margin-right: 20px;
 		font-size: 24px;
 		padding-bottom: 1px;
-		margin-bottom: 5px;
 	}
 	.resources {
 		grid-gap: 40px;
@@ -592,7 +597,7 @@ footer a {
 	.syllabus-subsection {
 		padding-left: 0;
 	}
-	.syllabus-subsection p{
+	.syllabus-subsection p,	.syllabus-subsection h5 {
 		padding-left: 0px;
 	}
 	.syllabus-subsection ul, .syllabus-subsection ol {

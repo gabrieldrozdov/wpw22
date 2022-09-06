@@ -273,6 +273,10 @@ strong {
 	justify-content: center;
 	border-radius: 20px;
 }
+.demos-subheading {
+	padding-top: 40px;
+	grid-column: 1/-1;
+}
 .resources {
 	grid-gap: 60px;
 }
@@ -392,7 +396,7 @@ strong {
 }
 .syllabus-subsection ul li {
 	margin-top: 5px;
-	list-style-type: "- ";
+	list-style-type: "-  ";
 }
 .syllabus-subsection ol {
 	margin-top: -5px;
@@ -400,6 +404,13 @@ strong {
 }
 .syllabus-subsection ol li {
 	margin-top: 5px;
+}
+.syllabus-subheading {
+	padding-top: 20px;
+}
+.syllabus-subheading a {
+	text-decoration: none;
+	color: #555;
 }
 .syllabus-link {
 	text-decoration: none;
@@ -577,6 +588,9 @@ footer a {
 		margin-right: 20px;
 		font-size: 24px;
 		padding-bottom: 1px;
+	}
+	.demos-subheading {
+		padding-top: 20px;
 	}
 	.resources {
 		grid-gap: 40px;

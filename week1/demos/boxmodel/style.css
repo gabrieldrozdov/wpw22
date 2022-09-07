@@ -23,6 +23,7 @@
 	border: 30px solid black;
 	width: 400px;
 	height: 600px;
+	background-color: lightgray;
 }
 .div4 {
 	box-sizing: border-box;
@@ -33,4 +34,15 @@
 }
 .div6 {
 	padding: 100px;
+}
+.div7 {
+	border: 20px solid blue;
+	border-radius: 20px;
+	height: 200px;
+}
+.div8 {
+	background-color: gray;
+	border-radius: 40px;
+	padding: 50px;
+	height: 200px;
 }

@@ -1,0 +1,33 @@
+p {
+	font-size: 36px;
+	font-family: sans-serif;
+}
+
+.hover1:hover {
+	font-size: 80px;
+}
+.hover2 {
+	display: inline-block;
+	border: 2px solid black;
+	text-align: center;
+	padding: 80px;
+	margin: 80px;
+	text-decoration: none;
+	color: black;
+	font-size: 36px;
+	font-family: sans-serif;
+	border-radius: 100%;
+}
+.hover2:hover {
+	background-color: black;
+	color: white;
+}
+.hover2:active {
+	opacity: .5;
+}
+.hover3 {
+	cursor: pointer;
+}
+.hover3:hover {
+	opacity: .5;
+}

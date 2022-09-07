@@ -4,13 +4,25 @@
 <head>
 	<!-- Space reserved for meta information (not visible) -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Box Model</title>
+	<title>Custom Fonts</title>
 	<link rel="stylesheet" href="style.css">
+
+	<!-- Google Fonts load-in code -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-	<!-- Put your code here! -->
+	<p>There is a limited number of <a href="https://www.cssfontstack.com/" target="_blank">web-safe fonts</a> that every computer will have, but that’s super boring. How can you load your own fonts?</p>
+
+	<p>If you have the font files, that’s great! You can include them in your repository and use the @font-face code to load in your own files. A whole bunch of file types are supported, but .woff and .woff2 are best for the web (even though I’m using .ttf fonts here). <span class="customfont1">And here’s your <strong>custom font!</strong></span></p>
+
+	<p>Another option is to load in fonts from an online source, like <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. This is also super easy!</p>
+
+	<p class="customfont2">After picking your font, Google will provide you with the code you need to include on your webpage to load in their fonts. I’ve added some lines to the "head" tag that do just this for the typeface Josefin Sans. Then, in your stylesheet you can specify the font you want to use and voila!</p>
 
 </body>
 

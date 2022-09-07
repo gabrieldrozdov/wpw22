@@ -4,13 +4,21 @@
 <head>
 	<!-- Space reserved for meta information (not visible) -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Box Model</title>
+	<title>Transition Smoothing</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<!-- Put your code here! -->
+	<p>Hover states can look janky without some smoothing. We can do that through the "transition" property by specifying the number of seconds we want the transition to take.</p>
+
+	<p class="hover1">Hovering over this paragraph shows how you can smooth all properties at once.</p>
+
+	<p>What if we want to target only a couple of specific properties? That’s easy!</p>
+
+	<p class="hover2">Hovering over this paragraph only smooths the change in border radius and font color.</p>
+
+	<p>I pretty much always go for .2s transitions and keep the default transition properties, but you can go wild if you want with the <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">info here</a>.
 
 </body>
 

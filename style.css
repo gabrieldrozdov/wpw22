@@ -175,10 +175,10 @@ strong {
 	text-transform: uppercase;
 }
 @keyframes heading-main {
-  from {
+	from {
 		font-variation-settings: "wght" 800, "slnt" 0;
-  }
-  to {
+	}
+	to {
 		font-variation-settings: "wght" 300, "slnt" 7;
   }
 }
@@ -190,12 +190,12 @@ strong {
 	line-height: 1em;
 }
 .heading-main-animation span{
-  animation-name: heading-main;
-  animation-direction: alternate;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-  animation-iteration-count: 6;
+	animation-name: heading-main;
+	animation-direction: alternate;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	animation-iteration-count: 6;
 }
 .heading-main-animation span:nth-child(1) { animation-delay: .2s }
 .heading-main-animation span:nth-child(2) { animation-delay: .4s }

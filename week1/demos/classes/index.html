@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Space reserved for meta information (not visible) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classes</title>
+
+	<!-- Put CSS classes here! -->
+	<style>
+		.sampleclass {
+			font-size: 24px;
+			font-family: sans-serif;
+		}
+		.anotherclass {
+			border: 1px solid red;
+		}
+		p {
+			font-family: monospace;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p class="sampleclass">Classes are the way you can apply the same styles to multiple elements.</p>
+
+	<p class="sampleclass">This way, you don’t need to repeat code, and you can easily update the styling for multiple elements at once. It’s great!</p>
+
+	<p>This is what the normal paragraph element would look like without a class applied to it. <strong>Notice that you can also apply CSS to everything that uses a particular tag, like the "p" element. That’s why this text is monospaced right now.</strong></p>
+
+	<div class="sampleclass">
+		<p>Classes can be applied to anything. For elements like Divs, anything within the element will <em>inherit</em> the CSS styles of the <em>parent’s</em> class.</p>
+	</div>
+
+	<div class="sampleclass" style="border:1px solid black">
+		<p>You can combine classes with inline CSS.</p>
+	</div>
+
+	<div class="sampleclass anotherclass">
+		<p>You can even combine multiple classes. Just separate them by a space!</p>
+	</div>
+
+</body>
+
+</html>

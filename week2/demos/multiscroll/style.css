@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+.parent {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.parent div { /* Applies CSS styles to all <div> elements inside of <div class="parent"> */
+	height: 100vh; /* Forces height to not change */
+	overflow: scroll; /* Content inside can only be viewed via scrolling */
+}
+#section1 {
+	background-color: yellow;
+}
+#section2 {
+	background-color: pink;
+}
+#section3 {
+	background-color: orange;
+}

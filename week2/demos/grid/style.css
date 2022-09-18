@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+.demo-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Five equal-sized columns */
+	grid-gap: 40px;
+	padding: 40px;
+}
+.big-block {
+	grid-area: 2 / 2 / 4 / 4;
+	 /* First 2 numbers are the starting position (row, column), second two numbers are the ending position */
+}

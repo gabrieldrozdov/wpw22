@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+header {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column; /* Flexbox - Items stack in a column instead of in a row */
+	align-items: center; /* Flexbox - Centers everything vertically */
+	justify-content: center; /* Flexbox - Centers everything horizontally */
+	background-color: #1449f2;
+	color: white;
+}
+.navbar {
+	position: sticky;
+	top: 0px;
+	background-color: #f61d5d;
+	color: white;
+	width: 100vw;
+	padding: 0;
+	display: flex;
+	align-items: center; /* Flexbox - Centers everything vertically */
+}
+.flex-child {
+	flex-grow: 1; /* Makes items fill up space */
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	transition: .2s;
+	text-align: center;
+}
+.flex-child:hover {
+	background-color: white;
+	color: #f61d5d;
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+}
+.content p { /* Applies styles to all <p> tags inside of <div class="content"> */
+	max-width: 800px;
+	display: flex;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Space reserved for meta information (not visible) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Box Model</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Websites are like boxes within boxes within boxes of information. What do those boxes look like?</h1>
+	<div class="div1">
+		<h2>Let’s look at a Div</h2>
+		<p>Divs have <em>margins</em>, <em>padding</em>, and <em>borders</em>.</p>
+		<p>This Div has:
+			<ul>
+				<li>100px of margins on all sides (outside of the border)</li>
+				<li>100px of padding on all sides (inside of the border)</li>
+				<li>100px border on all sides (between the padding and margin)</li>
+			</ul>
+		</p>
+	</div>
+	<div class="div2">
+		<h2>Here's another Div</h2>
+		<p>You can also set each side individually for margins, padding, and border. This leads to *funky business*.</p>
+	</div>
+	<div class="div3">
+		<h2>Here's a third Div</h2>
+		<p>Additionally, you can set a Div’s width and height. You can also give it a background color!</p>
+	</div>
+	<div class="div3 div4">
+		<h2>Here's a fourth Div</h2>
+		<p>Normally, the padding and border are added onto the element’s width and height. If you change the "box-sizing" property to "border-box", padding and border are included in the width and height.</p>
+	</div>
+	<div class="div5">
+		<p>Margin defines the area around an element. Two elements can share the same margin space. This means that if two elements have a margin of 100px, the space between them will be 100px, not 200px.</p>
+	</div>
+	<div class="div5">
+		<p>This means that this element is only 100px away from the previous one.</p>
+	</div>
+	<div class="div6">
+		<p>Two elements can’t share the same padding space. This means that if two elements have padding of 100px, the space between them will be 200px.</p>
+	</div>
+	<div class="div6">
+		<p>This means that this element is 200px away from the previous one.</p>
+	</div>
+	<div class="div7">
+		<p>One more way to stylize this so-called box is to give it a border radius!</p>
+	</div>
+	<div class="div8">
+		<p>Border radius affects the background color of an element, too. (Also, look, it’s a box shadow!)</p>
+	</div>
+
+</body>
+
+</html>

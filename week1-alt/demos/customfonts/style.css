@@ -1,0 +1,25 @@
+p {
+	font-size: 36px;
+	font-family: "Verdana", sans-serif;
+}
+
+@font-face {
+	font-family: 'Qwitcher';
+	src: url("fonts/QwitcherGrypen-Regular.ttf") format("TrueType");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Qwitcher';
+	src: url("fonts/QwitcherGrypen-Bold.ttf") format("TrueType");
+	font-weight: bold;
+	font-style: normal;
+}
+.customfont1 {
+	font-family: "Qwitcher", serif;
+	font-size: 80px;
+}
+.customfont2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 60px;
+}

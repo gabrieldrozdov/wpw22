@@ -1,0 +1,10 @@
+.parent {
+	position: relative;
+	font-size: 36px;
+}
+.sticky {
+	position: sticky;
+	top: 20px;
+	background-color: black;
+	color: white;
+}

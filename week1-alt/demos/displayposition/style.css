@@ -1,0 +1,37 @@
+.div1 {
+	display: block;
+	background-color: lightgray;
+	margin: 20px;
+}
+.div2 {
+	display: inline;
+	background-color: lightgray;
+	margin: 20px;
+}
+.div3 {
+	display: block;
+	text-align: center;
+	background-color: lightgray;
+	margin: 20px;
+	padding: 20px;
+}
+.div3-child {
+	display: inline;
+	text-align: center;
+	background-color: white;
+	margin: 20px;
+}
+.div4 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 20px;
+}
+.div5-parent {
+	position: relative;
+	height: 200px;
+	border: 2px solid green;
+}
+.div6 {
+	position: fixed;
+}

@@ -35,6 +35,7 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	background-color: var(--white);
 }
 * {
 	padding: 0;
@@ -52,6 +53,7 @@ body {
 	font-variation-settings: "wght" 400, "slnt" 0;
 	font-size: 24px;
 	line-height: 1.4em;
+	cursor: none;
 }
 main {
 	width: 100%;
@@ -73,6 +75,12 @@ a:active {
 }
 strong {
 	font-variation-settings: "wght" 600, "slnt" 0;
+}
+canvas {
+	position:fixed;
+	z-index:999;
+	left:0;
+	pointer-events: none;
 }
 
 /* ------------- STRUCTURE ------------- */
@@ -119,19 +127,20 @@ strong {
 	align-items: center;
 	font-size: 24px;
 	font-variation-settings: "wght" 700, "slnt" 0;
-	line-height: 1em;
+	line-height: 1.2em;
 	text-align: center;
 	text-decoration: none;
 	border: 2px solid var(--black);
-	border-radius: 20px;
-	padding: 20px;
+	border-radius: 100%;
+	padding: 40px;
 	width: 100%;
 	color: var(--black);
-	transition: .2s;
+	transition: opacity .2s, color .2s, background-color .2s, border-radius .2s;
 }
 .link-btn:hover {
 	color: var(--yellow);
 	background-color: var(--black);
+	border-radius: 20px;
 }
 .link-btn:active {
 	opacity: .5;
@@ -163,7 +172,7 @@ strong {
 	font-size: 24px;
 	font-variation-settings: "wght" 700, "slnt" 0;
 	letter-spacing: .1em;
-	line-height: 1em;
+	line-height: 1.2em;
 	text-transform: uppercase;
 }
 .heading-small {
@@ -195,7 +204,7 @@ strong {
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	animation-iteration-count: 6;
+	animation-iteration-count: infinite;
 }
 .heading-main-animation span:nth-child(1) { animation-delay: .2s }
 .heading-main-animation span:nth-child(2) { animation-delay: .4s }
@@ -211,6 +220,11 @@ strong {
 .heading-main-animation span:nth-child(12) { animation-delay: 2.4s }
 .heading-main-animation span:nth-child(13) { animation-delay: 2.6s }
 .heading-main-animation span:nth-child(14) { animation-delay: 2.8s }
+.heading-main-animation span:nth-child(15) { animation-delay: 3s }
+.heading-main-animation span:nth-child(16) { animation-delay: 3.2s }
+.heading-main-animation span:nth-child(17) { animation-delay: 3.4s }
+.heading-main-animation span:nth-child(18) { animation-delay: 3.6s }
+.heading-main-animation span:nth-child(19) { animation-delay: 3.8s }
 
 /* Weekly Meeting Overview */
 .class {
@@ -246,11 +260,11 @@ strong {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
-#week-return {
+#week-active {
 	background-color: var(--black);
 	color: var(--yellow);
 }
-#week-return:hover {
+#week-active:hover {
 	background-color: var(--yellow);
 	color: var(--black);
 }
@@ -422,6 +436,14 @@ strong {
 	content: "# ";
 }
 
+/* Demos */
+.demo {
+	width: 100%;
+	min-height: 500px;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
 /* Footer */
 footer {
 	background-color: var(--black);
@@ -490,60 +512,40 @@ footer a {
 	right: 40px;
 	border: 2px solid var(--black);
 	background-color: var(--yellow);
-	border-radius: 50%;
+	border-radius: 100%;
 	z-index: 999;
 	transition: .2s;
 }
 .up:hover {
 	background-color: var(--black);
 	color: var(--yellow);
+	border-radius: 20px;
 }
 .up-show {
 	bottom: 40px;
 }
 
-/* Element Stickers */
-@keyframes element {
-  from {
-    transform: rotate(20deg);
-  }
-  to {
-    transform: rotate(-20deg);
-  }
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
 }
-.element {
-  position: absolute;
-  font-size: 18px;
-	font-variation-settings: "wght" 800, "slnt" 0;
-  padding: 5px;
-  line-height: 1.2em;
-  z-index: 200;
-  background-color: var(--yellow);
-  color: var(--black);
-  border: 2px solid var(--black);
-  border-radius: 100%;
-  animation-name: element;
-  animation-direction: alternate;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  cursor: pointer;
-  transition: .2s;
+::-webkit-scrollbar-track {
+	background: var(--black);
 }
-.element:hover {
-	color: var(--yellow);
-	background-color: var(--black);
-  z-index: 201;
+::-webkit-scrollbar-thumb {
+	background: var(--white);
 }
-.element:active {
-	opacity: .5;
-}
+
 
 /* ------------- RESPONSIVE STYLES ------------- */
 @media screen and (max-width: 900px) {
 	body {
 		font-size: 18px;
+		cursor: auto;
+	}
+	canvas {
+		display: none;
 	}
 	.container {
 		grid-gap: 80px;
@@ -559,6 +561,7 @@ footer a {
 	}
 	.link-btn {
 		font-size: 18px;
+		padding: 20px;
 	}
 	.class-header {
 		align-items: flex-start;

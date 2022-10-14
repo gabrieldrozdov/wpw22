@@ -11,15 +11,16 @@
 	<link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
 
 	<style>
-		:root {
-			--black: #ffb400;
-			--white: white;
-			--yellow: black;
+		html {
+			filter:hue-rotate(-216deg);
 		}
 	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
 <body>
+	<div id="trail"></div>
+
 	<main id="top">
 
 		<a id="up" href="#top" class="up">Up</a>
@@ -27,13 +28,14 @@
 		<div class="class">
 
 			<div id="class-info" class="heading-sticky">
-				<div class="weeks weeks-alt">
-					<a href="../" id="week-return"><span class="week-name">Return </span>Home</a>
+				<h2 class="heading-small">Web Programming Workshop</h2>
+				<nav class="weeks weeks-alt">
+					<a href="../"><span class="week-name">Return </span>Home</a>
 					<a href="../week1"><span class="week-name">Week </span>1</a>
 					<a href="../week2"><span class="week-name">Week </span>2</a>
-					<a href="../week3"><span class="week-name">Week </span>3</a>
+					<a href="../week3" id="week-active"><span class="week-name">Week </span>3</a>
 					<a href="../week4"><span class="week-name">Week </span>4</a>
-				</div>
+				</nav>
 			</div>
 
 			<div class="container">
@@ -41,10 +43,11 @@
 				<header id="header">
 					<div class="class-header">
 						<div>
-							<span class="heading-small">GRAPH 3188</span>
+							<span class="heading-small">Week 3</span>
 							<h1 class="heading-main">
 								<span class="heading-main-animation">
-									<span>W</span><span>e</span><span>e</span><span>k</span> <span>3</span>
+									Flexibility:<br>
+									<span>R</span><span>e</span><span>s</span><span>p</span><span>o</span><span>n</span><span>s</span><span>i</span><span>v</span><span>e</span> <span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
 								</span>
 							</h1>
 						</div>
@@ -201,8 +204,20 @@
 			</div>
 
 		</div>
-	
+
+		<footer id="footer">
+
+			<div class="container">
+				<p>
+					<span style="color:var(--yellow)"><strong>RISD Fall 2022</strong></span><br>
+					Course and site designed by <a href="https://www.gabrieldrozdov.com/" target="_blank">Gabriel Drozdov</a>.
+				</p>
+			</div>
+
+		</footer>
+
 	</main>
 	<script src="../script.js"></script>
+	<script src="../sketch.js"></script>
 </body>
 </html>

@@ -11,8 +11,11 @@
 	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
 </head>
 <body>
+	<div id="trail"></div>
+
 	<main id="top">
 
 		<a id="up" href="#top" class="up">Up</a>
@@ -20,13 +23,13 @@
 		<div class="class">
 
 			<div id="class-info" class="heading-sticky">
-				<h2 class="heading-small">Week 4 / Sept. 30, 2022</h2>
-				<div class="weeks">
+				<h2 class="heading-small">RISD 2022 Fall Semester</h2>
+				<nav class="weeks">
 					<a href="week1"><span class="week-name">Week </span>1</a>
 					<a href="week2"><span class="week-name">Week </span>2</a>
 					<a href="week3"><span class="week-name">Week </span>3</a>
 					<a href="week4"><span class="week-name">Week </span>4</a>
-				</div>
+				</nav>
 			</div>
 
 			<div class="container">
@@ -34,7 +37,7 @@
 				<header id="header">
 					<div class="class-header">
 						<div>
-							<span class="heading-small">GRAPH 3188</span>
+							<span class="heading-small">GRAPH 3188 (v2!)</span>
 							<h1 class="heading-main">
 								Workshop:<br>
 								<span class="heading-main-animation">
@@ -51,49 +54,40 @@
 						</div>
 					</div>
 					<p>
-						<a href="https://docs.google.com/spreadsheets/d/1KXUkdULcAPe7tt3qQNqIKNJstu4EHPkujbu9-As1JPE/edit?usp=sharing" target="_blank">Section 01 Class Websites</a><br><br>
 						Taught by Gabriel Drozdov {<a href="mailto:gdrozdov@risd.edu">gdrozdov@risd.edu</a>}<br>
 						<strong>Location:</strong> Design Center 407<br>
-						<strong>Time:</strong> 4 Fridays, 8:00AM – 1:00PM<br>
-						<strong>Office Hours:</strong> By Appointment (Tuesdays and Wednesdays)
+						<strong>Time:</strong> Fridays, 8:00AM – 1:00PM<br>
+						<strong>Office Hours:</strong> By appointment (Wednesdays preferred!)
 					</p>
 					<nav class="grid-4">
 						<a href="#syllabus" class="link-btn">Syllabus</a>
 						<a href="#schedule" class="link-btn">Schedule</a>
 						<a href="#projects" class="link-btn">Projects</a>
-						<a href="#resources" class="link-btn">Resources</a>
+						<a href="https://docs.google.com/spreadsheets/d/1KXUkdULcAPe7tt3qQNqIKNJstu4EHPkujbu9-As1JPE/edit?usp=sharing" class="link-btn" target="_blank">Student Websites</a>
 					</nav>
 				</header>
 
 				<section id="weekly-agenda" class="grid-4">
 					<div class="heading-section">
 						<div class="section-bar"></div>
-						<h3 class="heading-medium">Agenda</h3>
+						<h3 class="heading-medium">Overview</h3>
 					</div>
 					<div class="section-content agenda">
 						<div>
-							<span class="agenda-number">0</span>
-							<p><span class="heading-small">Discuss</span><br><a href="https://docs.google.com/document/d/1E1Dh32gpMX5-rFO6GHaJacI3SKmwuBm5WLRXna4DKNs/edit" target="_blank">Weekly Research and Analysis</a></p>
-						</div>
-						<div>
 							<span class="agenda-number">1</span>
-							<p><span class="heading-small">Critique</span><br><a href="#project3">Final Project (casually, it’s not done yet!)</a></p>
+							<p><span class="heading-small">Basics</span><br><a href="week1">HTML/CSS</a></p>
 						</div>
 						<div>
 							<span class="agenda-number">2</span>
-							<p><span class="heading-small">Not a Lecture</span><br>Why are we still making websites?</p>
+							<p><span class="heading-small">Layout</span><br><a href="week2">Flexbox/Grid</a></p>
 						</div>
 						<div>
 							<span class="agenda-number">3</span>
-							<p><span class="heading-small">Workshop</span><br>SEO and JavaScript Libraries</p>
+							<p><span class="heading-small">Flexibility</span><br><a href="week3">Responsive Design</a></p>
 						</div>
 						<div>
 							<span class="agenda-number">4</span>
-							<p><span class="heading-small">Workshop</span><br>Webflow pt. 2</p>
-						</div>
-						<div>
-							<span class="agenda-number">5</span>
-							<p><span class="heading-small">Homework</span><br>Finish <a href="#project3">Final Project (due next Friday!)</a></p>
+							<p><span class="heading-small">Function</span><br><a href="week4">JavaScript</a></p>
 						</div>
 					</div>
 				</section>
@@ -101,44 +95,13 @@
 				<section id="weekly-demos" class="grid-4">
 					<div class="heading-section">
 						<div class="section-bar"></div>
-						<h3 class="heading-medium">Demos</h3>
+						<h3 class="heading-medium">Useful Links</h3>
 					</div>
 					<div class="section-content">
 						<a href="https://github.com/gabrieldrozdov/wp22" class="link-btn section-wide" target="_blank">Class Repository</a>
-
-						<h4 class="heading-small demos-subheading">Review from Week 3</h4>
-							<a href="https://www.w3schools.com/css/css3_mediaqueries.asp" class="link-btn" target="_blank">Media Queries</a>
-							<a href="https://www.w3schools.com/Css/css3_mediaqueries_ex.asp" class="link-btn" target="_blank">Media Query Examples</a>
-							<a href="https://www.w3schools.com/jquery/default.asp" class="link-btn" target="_blank">jQuery Overview</a>
-							<a href="https://www.w3schools.com/jquery/jquery_get_started.asp" class="link-btn" target="_blank">Enabling jQuery</a>
-							<a href="https://www.w3schools.com/jquery/jquery_syntax.asp" class="link-btn" target="_blank">jQuery Syntax</a>
-							<a href="https://www.w3schools.com/jquery/jquery_examples.asp" class="link-btn" target="_blank">jQuery Examples</a>
-							<a href="https://gabrieldrozdov.github.io/webtype/exercises/modular-letters/" class="link-btn" target="_blank">Dark Mode Example</a>
-							<a href="https://www.sometimesredsometimesblue.com/" class="link-btn" target="_blank">Sometimes Red, Sometimes Blue</a>
-							<a href="https://codepen.io/imvpn22/pen/RwPvOgQ" class="link-btn" target="_blank">Analog Clock Example</a>
-							<a href="https://www.are.na/block/13337824" class="link-btn" target="_blank">John Caserta’s Lecture on JavaScript</a>
-
-						<h4 class="heading-small demos-subheading">SEO and JavaScript Libraries</h4>
-							<a href="https://www.w3schools.com/tags/tag_meta.asp" class="link-btn" target="_blank">Meta Tags</a>
-							<a href="https://www.w3schools.com/html/html_favicon.asp" class="link-btn" target="_blank">Favicons</a>
-							<a href="https://medium.com/geekculture/open-graph-tags-in-html-101-5d470bbdb78a" class="link-btn" target="_blank">Open Graph Tags</a>
-							<a href="https://p5js.org/" class="link-btn" target="_blank">p5.js</a>
-							<a href="https://p5js.org/examples/" class="link-btn" target="_blank">p5.js Examples</a>
-							<a href="https://tonejs.github.io/" class="link-btn" target="_blank">Tone.js</a>
-							<a href="https://threejs.org/" class="link-btn" target="_blank">three.js</a>
-							<a href="http://paperjs.org/" class="link-btn" target="_blank">Paper.js</a>
-							<a href="https://reactjs.org/" class="link-btn" target="_blank">React</a>
-							<a href="https://vuejs.org/" class="link-btn" target="_blank">Vue</a>
-							<a href="https://airbnb.design/lottie/" class="link-btn" target="_blank">Lottie</a>
-							<a href="https://lottiefiles.com/" class="link-btn" target="_blank">LottieFiles</a>
-
-						<h4 class="heading-small demos-subheading">Webflow!</h4>
-							<a href="https://webflow.com/" class="link-btn" target="_blank">Make a Webflow Account</a>
-							<a href="https://university.webflow.com/" class="link-btn" target="_blank">Webflow University</a>
-							<a href="https://webflow.com/made-in-webflow" class="link-btn" target="_blank">Webflow Showcase</a>
-							<a href="https://webflow.com/interactions-animations" class="link-btn" target="_blank">Interactions</a>
-							<a href="https://university.webflow.com/lesson/after-effects-and-lottie-in-webflow" class="link-btn" target="_blank">Lottie</a>
-							<a href="https://university.webflow.com/lesson/intro-to-dynamic-content" class="link-btn" target="_blank">CMS</a>
+						<a href="https://github.com/gabrieldrozdov/wp22" class="link-btn" target="_blank">Getting Setup to Code</a>
+						<a href="https://github.com/gabrieldrozdov/wp22" class="link-btn" target="_blank">Anonymous Feedback Form</a>
+						<a href="https://www.are.na/john-caserta/web-programming-ref" class="link-btn" target="_blank">John Caserta’s Collection of Web Inspiration</a>
 					</div>
 				</section>
 
@@ -151,56 +114,56 @@
 						<div>
 							<h4 class="heading-small">Web Browsers</h4>
 							<ul class="resources-primary">
-								<li><a href="https://www.google.com/chrome/" target="_blank">Chrome</a> (main browser for class)</li>
+								<li><a href="https://www.google.com/chrome/" target="_blank">Chrome</a></li>
 								<li><a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a></li>
-							</ul>
-							<ul class="resources-secondary">
-								<li><a href="https://www.apple.com/safari/" target="_blank">Safari</a> (MacOS)</li>
-								<li><a href="https://www.microsoft.com/en-us/edge" target="_blank">Edge</a> (Windows)</li>
+								<li><a href="https://www.apple.com/safari/" target="_blank">Safari</a></li>
 							</ul>
 						</div>
 						<div>
 							<h4 class="heading-small">Apps for Coding</h4>
 							<ul class="resources-primary">
 								<li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
-								<li><a href="https://atom.io/" target="_blank">Atom</a> (recommended text editor)</li>
+								<li><a href="https://atom.io/" target="_blank">Atom Text Editor</a></li>
 							</ul>
 							<ul class="resources-secondary">
-								<li><a href="https://www.sublimetext.com/" target="_blank">Sublime</a> (text editor I use)</li>
 								<li><a href="https://code.visualstudio.com/" target="_blank">VS Code</a></li>
+									<li><a href="https://www.sublimetext.com/" target="_blank">Sublime</a></li>
 							</ul>
 						</div>
 						<div>
 							<h4 class="heading-small">Code References</h4>
 							<ul class="resources-primary">
-								<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
-								<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to Grid</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+								<li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
+								<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox Guide</a></li>
+								<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Grid Guide</a></li>
 							</ul>
 							<ul class="resources-secondary">
-								<li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
-								<li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
 								<li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
 								<li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="heading-small">Design Tools</h4>
+							<h4 class="heading-small">Tutorials</h4>
 							<ul class="resources-primary">
-								<li><a href="https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce?hl=en" target="_blank">CSSViewer</a> (Chrome plug-in to see CSS styles)</li>
-								<li><a href="https://www.cssfontstack.com/" target="_blank">Web-Safe Fonts</a></li>
-								<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+								<li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a></li>
+								<li><a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a></li>
+								<li><a href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">Web Design in 4 Minutes</a></li>
 							</ul>
 							<ul class="resources-secondary">
-								<li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a></li>
-								<li><a href="https://www.typewolf.com/cheatsheet" target="_blank">Typewolf Typographic Cheat Sheet</a></li>
+								<li><a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" target="_blank">Coding Train</a></li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="heading-small">Inspiration</h4>
+							<h4 class="heading-small">Design Tools</h4>
 							<ul class="resources-primary">
-								<li><a href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">Web Design in 4 Minutes</a></li>
-								<li><a href="http://www.csszengarden.com/" target="_blank">CSS Zen Garden</a></li>
-								<li>John Caserta’s <a href="https://www.are.na/john-caserta/web-programming-ref" target="_blank">massive collection of websites</a></li>
+								<li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+								<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+							</ul>
+							<ul class="resources-secondary">
+								<li><a href="https://www.cssfontstack.com/" target="_blank">Web-Safe Fonts</a></li>
+								<li><a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a></li>
+								<li><a href="https://www.typewolf.com/cheatsheet" target="_blank">Typewolf Typographic Cheat Sheet</a></li>
 							</ul>
 						</div>
 					</div>
@@ -245,7 +208,7 @@
 					</div>
 					<div class="section-content syllabus-content">
 
-						<section id="course-info" class="section-wide syllabus-section">
+						<section id="course-info" class="section-wide syllabus-section" data-section="1">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#course-info" class="syllabus-link">Course Info</a></h3>
@@ -286,7 +249,7 @@
 							</div>
 						</section>
 
-						<section id="purpose" class="section-wide syllabus-section">
+						<section id="purpose" class="section-wide syllabus-section" data-section="2">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#purpose" class="syllabus-link">What is the point of this course?</a></h3>
@@ -318,7 +281,7 @@
 							</div>
 						</section>
 
-						<section id="structure" class="section-wide syllabus-section">
+						<section id="structure" class="section-wide syllabus-section" data-section="3">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#structure" class="syllabus-link">What will we be doing?</a></h3>
@@ -354,7 +317,7 @@
 							</div>
 						</section>
 
-						<section id="assessment" class="section-wide syllabus-section">
+						<section id="assessment" class="section-wide syllabus-section" data-section="4">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#assessment" class="syllabus-link">How will I be graded?</a></h3>
@@ -395,7 +358,7 @@
 							</div>
 						</section>
 
-						<section id="schedule" class="section-wide syllabus-section">
+						<section id="schedule" class="section-wide syllabus-section" data-section="5">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#schedule" class="syllabus-link">Schedule</a></h3>
@@ -470,23 +433,25 @@
 							</div>
 						</section>
 
-						<section id="projects" class="section-wide syllabus-section">
+						<section id="projects" class="section-wide syllabus-section" data-section="6">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#projects" class="syllabus-link">Projects</a></h3>
 							</div>
 							<div id="project0" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#project0" class="syllabus-link">Project 0 </a></h4>
-								<p><strong>Weekly Research and Analysis</strong></p>
-								<p>Each week, I ask that everyone brings in a website they find interesting. This can be for any reason — its design, code, topic, whatever. You don't need to prepare anything other than the site itself, but be ready to say a little bit about why you picked the site. We’ll also do a deeper dive together in-class to see how the site was made.</p>
+								<p><strong>Fall in Love with Websites</strong></p>
+								<p>WEBSITES ARE SO COOL. If you don’t believe that yet, it’s time to convince you.</p>
+								<p>Each week, bring in a website you think is COOL (or interesting). This can be for any reason — its design, code, topic, whatever.</p>
+								<p>In class, we’ll look at the site’s guts (i.e. its source code) to see what it’s doing.</p>
 								<p>There are no restrictions on what site you choose. If you’re struggling, check out the <a href="#inspiration">inspiration</a> section for ideas.</p>
 								<p><em>Share your site-of-the-week to this <a href="https://docs.google.com/document/d/1E1Dh32gpMX5-rFO6GHaJacI3SKmwuBm5WLRXna4DKNs/edit?usp=sharing" target="_blank">Google Doc</a> before class. Don’t spend longer than five minutes per week on this!</em></p>
 							</div>
 							<div id="project1" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#project1" class="syllabus-link">Project 1</a></h4>
 								<p><strong>Type and Color</strong></p>
-								<p><em>Why do websites look the way they do? How does changing a site’s hierarchy, fonts, color, etc. change how it reads? Does it change the meaning at all?</em></p>
-								<p>Wikipedia’s design is pretty sterile — let’s remake it! For this project, redesign a <a href="hhttps://www.wikipedia.org/" target="_blank">Wikipedia</a> page. Pick a page about something you don’t know — try out the <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random article</a> button! You can use any language, but English is probably the easiest to work with for now. The page you pick should have at least one image, a couple of sections, and a few subsections. <a href="https://en.wikipedia.org/wiki/Lovebug_Starski" target="_blank">This article</a> is a good minimum size. If you’re feeling comfortable (or bored), use a longer page with more elements (e.g. tables, lists, maps, etc. — something like <a href="https://en.wikipedia.org/wiki/Butte_County,_California" target="_blank">this article</a>) as your starting point.</p>
+								<p><a href="https://www.wikipedia.org/" target="_blank">WIKIPEDIA</a> LOOKS A CERTAIN WAY. Why? How does it’s look and layout affect the way you read it? How do these things affect the way you understand the information on the website?</p>
+								<p>For this project, redesign a Wikipedia page to better match its content. Pick a page about something you don’t know — try out the <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random article</a> button! (You can use any language, but English is probably the easiest to work with for now.) The page you pick should have at least one image, a couple of sections, and a few subsections. <a href="https://en.wikipedia.org/wiki/Lovebug_Starski" target="_blank">This article</a> is a good minimum size. If you’re feeling comfortable (or bored), use a longer page with more elements (e.g. tables, lists, maps, etc. — something like <a href="https://en.wikipedia.org/wiki/Butte_County,_California" target="_blank">this article</a>) as your starting point.</p>
 								<p>While making your redesign, consider the following design and code decisions:</p>
 								<ul>
 									<li>What tags are you using to denote which elements?</li>
@@ -500,16 +465,15 @@
 							</div>
 							<div id="project2" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#project2" class="syllabus-link">Project 2</a></h4>
-								<p><strong>Interaction and Response</strong></p>
-								<p><em>What makes websites like other design mediums? What makes them *different*?</em></p>
-								<p>Now that you have more tools at your disposal, rethink your design decisions for Project 1. How can you amp up the experience? How can you make this website feel like something other than a static document?</p>
+								<p><strong>Layout and Structure</strong></p>
+								<p>WEBSITES ARE HARD TO MAKE. They don’t like to work in the same way as print mediums, and you probably know that now.</p>
+								<p>Now that you have more tools at your disposal, rethink your website’s layout from Project 1. How can you restructure what you’ve got? How can you make this website actually work for screens?</p>
 								<p>For this project, either redesign your article from Project 1 or select a new one. Your new website should incorporate the following elements at least once each:</p>
 								<ul>
 									<li>Flexbox</li>
 									<li>CSS Grid</li>
 									<li>:hover and :active State(s) (optional)</li>
 									<li>@keyframes Animation(s) (optional)</li>
-									<li>@media Breakpoint(s) (very optional)</li>
 								</ul>
 								<p><em>To submit your project, push it to your GitHub repo.</em></p>
 							</div>
@@ -518,13 +482,13 @@
 								<p><strong>Microsites and Landing Pages</strong></p>
 								<p><em><a href="https://occupantfonts.com/" target="_blank">Landing</a> <a href="http://studiohmvd.com/" target="_blank">pages</a> <a href="https://www.firewatchgame.com/" target="_blank">are</a> <a href="https://klim.co.nz/" target="_blank">all</a> <a href="https://www.askhollyhow.com/" target="_blank">the</a> <a href="https://www.vocaltype.co/" target="_blank">rage</a> <a href="https://linktr.ee/" target="_blank">in</a> <a href="https://andwalsh.com/" target="_blank">web</a> <a href="https://spacetypeco.com/" target="_blank">design</a>.</em> They’re basically the posters of the digital world — flashy, attention-grabbing, easy to understand at a glance — but they can do things posters can’t, like resize to fit different screens, reveal information over time, or prompt a user to interact with something.</p>
 								<p>For this project, you’ll pick a topic of your own choosing. This could be a <a href="https://teenage.engineering/products/op-1" target="_blank">product</a>, a <a href="https://atlantictheater.org/" target="_blank">company</a>, a <a href="https://www.misfitsmarket.com/" target="_blank">service</a>, an <a href="https://www.weseeyouwat.com/" target="_blank">idea</a>, an <a href="https://www.malikafavre.com/" target="_blank">artist</a>, a <a href="https://www.colophon-foundry.org/typefaces/basis-grotesque/" target="_blank">typeface</a>, a <a href="https://creativemarket.com/" target="_blank">marketplace</a>, an <a href="https://bipocdesignhistory.com/" target="_blank">initiative</a>, a <a href="https://www.risd.edu/" target="_blank">school</a> — whatever. It can be real or imaginary. Just make sure it’s something you’re actually interested in.</p>
-								<p>Make a landing page for your topic. To start, design and develop what you see right as the page loads. This could be the navigation, a hero image with text and call-to-action (CTA) buttons, or anything you see fit. Once you have that, expand your site to include more information about your topic. And, <strong>make sure your site is responsive!</strong></p>
+								<p>Make a landing page for your topic. To start, design and develop what you see right as the page loads. This could be the navigation, a hero image with text and call-to-action (CTA) buttons, or anything you see fit. Once you have that, expand your site to include more information about your topic. And, <strong>make sure your site is responsive! This means you need to use media queries/breakpoints!!</strong></p>
 								<p>Go as far as you want with this landing page/microsite — you’ll be evaluated based on your growth through the course, and your attention to detail. You don’t need to incorporate every lesson into this site, but try to include a diversity of elements such as flexbox, grid, images/SVGs, links, navigation, etc.</p>
 								<p><em>To submit your project, push it to your GitHub repo. <strong>If you choose to make this project in Webflow, add a link to your project on your GitHub Pages website.</strong> You’ll have two weeks to finish this assignment.</em></p>
 							</div>
 						</section>
 
-						<section id="resources" class="section-wide syllabus-section">
+						<section id="resources" class="section-wide syllabus-section" data-section="7">
 							<div>
 								<div class="section-bar syllabus-bar"></div>
 								<h3 class="heading-large"><a href="#resources" class="syllabus-link">Resources</a></h3>
@@ -650,8 +614,9 @@
 			</div>
 
 		</footer>
-	
+
 	</main>
 	<script src="script.js"></script>
+	<script src="sketch.js"></script>
 </body>
 </html>

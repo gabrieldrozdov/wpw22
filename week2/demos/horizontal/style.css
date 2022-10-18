@@ -1,0 +1,29 @@
+* { /* gives CSS properties to EVERYTHING */
+	box-sizing: border-box; /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+}
+body {
+	margin: 0; /* gets rid of margin on the perimeter of the website */
+}
+.section-horizontal {
+	width: 100vw; /* sets the width to 100% of the browser window width */
+	height: 100vh; /* sets the height to 100% of the browser window height */
+	display: flex; /* ADVANCED! https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	overflow-x: auto; /* lets you scroll horizontally */
+	flex-wrap: nowrap; /* prevents wrapping onto another line */
+}
+.block {
+	width: 500px; /* can be whatever you want! */
+	height: 100%; /* can be whatever you want! */
+	border: 1px solid black; /* i just have this so you can see the difference between elements */
+	margin-right: 20px; /* space to the right, outside of the element */
+	margin-left: 20px; /* space to the left, outside of the element */
+	padding: 20px; /* space inside the elements */
+	flex-grow: 0; /* prevents items from growing */
+	flex-shrink: 0; /* prevents items from shrinking */
+
+	/* the following lets you center things horizontally + vertically */
+	display: inline-flex; /* overrides the previous display attribute */
+	flex-direction: column; /* the content inside an element will go in a column, not in a row */
+	align-items: center; /* center vertically */
+	justify-content: center; /* center horizontally */
+}

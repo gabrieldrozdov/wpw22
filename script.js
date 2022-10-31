@@ -23,20 +23,10 @@ setTime();
 setInterval(setTime, 1000);
 
 /* "Up" button rotation */
+let upBtn = document.querySelector("#up");
 function scrollRotate() {
-  let image = document.getElementById("up");
-  image.style.transform = "rotate(" + window.pageYOffset/10 + "deg)";
+  upBtn.style.transform = "rotate(" + window.pageYOffset/10 + "deg)";
 }
-// window.onscroll = function () {
-//   scrollRotate();
-//   let y = document.scrollTop;
-//   let up = document.querySelector("#up");
-//   if (y > 400) {
-//     up.classList.add("up-show");
-//   } else {
-//     up.classList.remove("up-show");
-//   }
-// };
 
 /* Syllabus navigation section activation */
 var myElement = document.getElementById('my-element');
@@ -65,6 +55,14 @@ window.onscroll = function() {
       sections[i].classList.remove("nav-active");
     }
   };
+
+  scrollRotate();
+  let scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  if (scrollTop > 400) {
+    upBtn.classList.add("up-show");
+  } else {
+    upBtn.classList.remove("up-show");
+  }
 };
 
 /* Syllabus mobile menu */

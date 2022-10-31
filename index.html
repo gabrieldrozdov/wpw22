@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
 </head>
 <body>
@@ -40,9 +39,7 @@
 							<span class="heading-small">GRAPH 3188 (v2!)</span>
 							<h1 class="heading-main">
 								Workshop:<br>
-								<span class="heading-main-animation">
-									<span>W</span><span>e</span><span>b</span> <span>P</span><span>r</span><span>o</span><span>g</span><span>r</span><span>a</span><span>m</span><span>m</span><span>i</span><span>n</span><span>g</span>
-								</span>
+								<span id="heading-animation" class="heading-main-animation">Web Programming</span>
 							</h1>
 						</div>
 						<div class="clock-container">
@@ -178,24 +175,24 @@
 			<div id="class-info" class="heading-sticky">
 				<h2 class="heading-small">Syllabus</h2>
 				<nav class="syllabus-menu">
-					<div id="syllabus-menu-btn" class="syllabus-menu-btn">Menu</div>
-					<ul id="syllabus-menu-links" class="syllabus-menu-links">
-						<li><a href="#course-info">Course Info</a></li>
-						<li><a href="#purpose">What is the point of this course?</a></li>
-						<li><a href="#structure">What will we be doing?</a></li>
-						<li><a href="#assessment">How will I be graded?</a></li>
-						<li><a href="#schedule">Schedule</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#resources"> Resources</a></li>
+					<div id="syllabus-menu-btn" class="syllabus-menu-btn" onclick="toggleMenu()">Menu</div>
+					<ul id="syllabus-menu-links" class="syllabus-menu-links menu-hide">
+						<li onclick="toggleMenu()"><a href="#course-info">Course Info</a></li>
+						<li onclick="toggleMenu()"><a href="#purpose">What is the point of this course?</a></li>
+						<li onclick="toggleMenu()"><a href="#structure">What will we be doing?</a></li>
+						<li onclick="toggleMenu()"><a href="#assessment">How will I be graded?</a></li>
+						<li onclick="toggleMenu()"><a href="#schedule">Schedule</a></li>
+						<li onclick="toggleMenu()"><a href="#projects">Projects</a></li>
+						<li onclick="toggleMenu()"><a href="#resources"> Resources</a></li>
 					</ul>
 				</nav>
 			</div>
 
-			<div class="container">
+			<div class="container" onclick="toggleMenu()">
 				<div class="grid-4">
 					<div class="section-heading">
 						<nav class="syllabus-nav">
-							<ul>
+							<ul id="desktop-nav">
 								<li><a id="nav1" href="#course-info" class="heading-medium">Course Info</a></li>
 								<li><a id="nav2" href="#purpose" class="heading-medium">What is the point of this course?</a></li>
 								<li><a id="nav3" href="#structure" class="heading-medium">What will we be doing?</a></li>
@@ -244,7 +241,7 @@
 							</div>
 							<div id="colophon" class="syllabus-subsection">
 								<h4 class="heading-medium"><a href="#colophon" class="syllabus-link">Colophon</a></h4>
-								<p>“<a href="https://gt-maru.com/" target="_blank">GT Maru</a>” is a variable typeface designed by Thierry Blancpain and is exclusively available at <a href="https://www.grillitype.com/" target="_blank">Grilli Type</a>.</p>
+								<p>“<a href="https://rsms.me/inter/" target="_blank">Inter</a>” is a variable typeface designed by Rasmus Andersson.</p>
 								<p>This syllabus is inspired by (and borrows from) both John Caserta’s <a href="https://www.are.na/john-caserta/web-programming-fxypekscqps" target="_blank">Web Programming</a> and Marie Otsuka’s <a href="https://webtype.htmlkitchen.net/" target="_blank">Web Type</a> courses.
 							</div>
 						</section>
@@ -364,66 +361,69 @@
 								<h3 class="heading-large"><a href="#schedule" class="syllabus-link">Schedule</a></h3>
 							</div>
 							<div id="schedule-week1" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#schedule-week1" class="syllabus-link">Week 1 | Basics: HTML/CSS</a></h4>
-								<h5 id="week1-agenda" class="heading-small syllabus-subheading"><a href="#week1-agenda" class="syllabus-link">Agenda</a></h5>
-								<ol start="0">
-									<li><strong>Lecture:</strong> Who are you? Why are you here?! Also <a href="#syllabus">here's the syllabus</a></li>
-									<li><strong>Not a Lecture:</strong> <a href="https://docs.google.com/presentation/d/19byPnQsU0tMrNV1_eZ0c71KZkwWX56rYxANHAr4Hwlw/edit?usp=sharing" target="_blank">Why I love websites</a></li>
-									<li><strong>Tutorial:</strong> <a href="https://docs.google.com/presentation/d/1gnzz2nkRqvBjwD1rd4QfFSx_HCc9Zh24-9CeNNKN554/edit?usp=sharing" target="_blank">How to code</a></li>
-									<li><strong>Workshop:</strong> Making things pretty on the web</li>
-									<li><strong>Homework:</strong> Start <a href="#project1">Project 1</a></li>
-								</ol>
+								<h4 class="heading-medium"><a href="#schedule-week1" class="syllabus-link">Week 1 — Basics: HTML/CSS</a></h4>
+								<h5 id="week1-agenda" class="heading-small syllabus-subheading"><a href="#week1-agenda" class="syllabus-link">Things You’ll Learn</a></h5>
+								<ul>
+									<li>What a website is</li>
+									<li>How to code</li>
+									<li>How HTML and CSS work together</li>
+									<li>How to reference online resources</li>
+									<li>Basic HTML element tags</li>
+									<li>Web typography</li>
+									<li>Units and positioning</li>
+									<li>CSS box model</li>
+								</ul>
 							</div>
 							<div id="schedule-week2" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#schedule-week2" class="syllabus-link">Week 2 | Layout: Flexbox/Grid</a></h4>
-								<h5 id="week2-due" class="heading-small syllabus-subheading"><a href="#week2-due" class="syllabus-link">Due</a></h5>
+								<h4 class="heading-medium"><a href="#schedule-week2" class="syllabus-link">Week 2 — Layout: Flexbox/Grid</a></h4>
+								<h5 id="week2-due" class="heading-small syllabus-subheading"><a href="#week2-due" class="syllabus-link">Things That Are Due</a></h5>
 								<ul>
 									<li><a href="#project0">Bring in a website to talk about!</a></li>
 									<li><a href="#project1">Project 1</a></li>
 								</ul>
-								<h5 id="week2-agenda" class="heading-small syllabus-subheading"><a href="#week2-agenda" class="syllabus-link">Agenda</a></h5>
-								<ol start="0">
-									<li><strong>Discuss:</strong> <a href="#project0">Did you fall in love with websites yet?</a></li>
-									<li><strong>Critique:</strong> <a href="#project1">Project 1</a> (casually, it’s the first project!)</li>
-									<li><strong>Lecture:</strong> Type foundries have the best websites I swear</li>
-									<li><strong>Tutorial:</strong> How is <a href="https://www.figma.com/" target="_blank">Figma</a> actually useful to us?</li>
-									<li><strong>Workshop:</strong> Putting things in place</li>
-									<li><strong>Homework:</strong> Start <a href="#project2">Project 2</a></li>
-								</ol>
+								<h5 id="week2-agenda" class="heading-small syllabus-subheading"><a href="#week2-agenda" class="syllabus-link">Things You’ll Learn</a></h5>
+								<ul>
+									<li>How to analayze other websites</li>
+									<li>The “display” CSS property</li>
+									<li>Flexbox fundamentals</li>
+									<li>CSS Grid fundamentals</li>
+									<li>Meta tags and SEO</li>
+									<li>Just a *little* bit about Figma</li>
+								</ul>
 							</div>
 							<div id="schedule-week3" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#schedule-week3" class="syllabus-link">Week 3 | Flexibility: Responsive Design</a></h4>
-								<h5 id="week3-due" class="heading-small syllabus-subheading"><a href="#week3-due" class="syllabus-link">Due</a></h5>
+								<h4 class="heading-medium"><a href="#schedule-week3" class="syllabus-link">Week 3 — Flexibility: Responsive Design</a></h4>
+								<h5 id="week3-due" class="heading-small syllabus-subheading"><a href="#week3-due" class="syllabus-link">Things That Are Due</a></h5>
 								<ul>
 									<li><a href="#project0">Bring in a website to talk about!</a></li>
 									<li><a href="#project2">Project 2</a></li>
 								</ul>
-								<h5 id="week3-agenda" class="heading-small syllabus-subheading"><a href="#week3-agenda" class="syllabus-link">Agenda</a></h5>
-								<ol start="0">
-									<li><strong>Discuss:</strong> <a href="#project0">Did you fall in love with websites yet?</a></li>
-									<li><strong>Critique:</strong> <a href="#project2">Project 2</a></li>
-									<li><strong>Not a Lecture:</strong> TBD</li>
-									<li><strong>Tutorial:</strong> Webflow basics for web development without code</li>
-									<li><strong>Workshop:</strong> Media queries</li>
-									<li><strong>Homework:</strong> Start <a href="#project3">Final Project</a></li>
-								</ol>
+								<h5 id="week3-agenda" class="heading-small syllabus-subheading"><a href="#week3-agenda" class="syllabus-link">Things You’ll Learn</a></h5>
+								<ul>
+									<li>What a “responsive” website is</li>
+									<li>Media queries and breakpoints</li>
+									<li>Why JavaScript is different from HTML/CSS</li>
+									<li>Variables</li>
+									<li>Functions</li>
+									<li>Changing classes or styles with JavaScript</li>
+									<li>Just a *little* bit about Webflow</li>
+								</ul>
 							</div>
 							<div id="schedule-week4" class="syllabus-subsection">
-								<h4 class="heading-medium"><a href="#schedule-week4" class="syllabus-link">Week 4</a></h4>
-								<h5 id="week4-due" class="heading-small syllabus-subheading"><a href="#week4-due" class="syllabus-link">Due</a></h5>
+								<h4 class="heading-medium"><a href="#schedule-week4" class="syllabus-link">Week 4 — Function: JavaScript</a></h4>
+								<h5 id="week4-due" class="heading-small syllabus-subheading"><a href="#week4-due" class="syllabus-link">Things That Are Due</a></h5>
 								<ul>
 									<li><a href="#project0">Bring in a website to talk about!</a></li>
 									<li>Progress on <a href="#project3">Final Project</a> <em>(submit by the following week)</em></li>
 								</ul>
-								<h5 id="week4-agenda" class="heading-small syllabus-subheading"><a href="#week4-agenda" class="syllabus-link">Agenda</a></h5>
-								<ol start="0">
-									<li><strong>Discuss:</strong> <a href="#project0">Did you fall in love with websites yet?</a></li>
-									<li><strong>Critique:</strong> <a href="#project2">Final Project</a> (but it’s not done yet!)</li>
-									<li><strong>Not a Lecture:</strong> TBD</li>
-									<li><strong>Tutorial:</strong> Webflow pt. 2 — interactions, Lottie animations, and setting up a CMS</li>
-									<li><strong>Workshop:</strong> JavaScript</li>
-									<li><strong>Homework:</strong> Continue working on <a href="#project3">Final Project</a></li>
-								</ol>
+								<h5 id="week4-agenda" class="heading-small syllabus-subheading"><a href="#week4-agenda" class="syllabus-link">Things You’ll Learn</a></h5>
+								<ul>
+									<li>If/else statements</li>
+									<li>While loops</li>
+									<li>For loops</li>
+									<li>Arrays</li>
+									<li>A recap of everything we’ve done</li>
+								</ul>
 							</div>
 						</section>
 

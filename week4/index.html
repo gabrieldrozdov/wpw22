@@ -16,7 +16,6 @@
 		}
 	</style>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
 </head>
 <body>
@@ -46,10 +45,8 @@
 						<div>
 							<span class="heading-small">Week 4</span>
 							<h1 class="heading-main">
-								<span class="heading-main-animation">
-									Function:<br>
-									<span>J</span><span>a</span><span>v</span><span>a</span><span>S</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>
-								</span>
+								Function:<br>
+								<span id="heading-animation" class="heading-main-animation">JavaScript</span>
 							</h1>
 						</div>
 						<div class="clock-container">
@@ -70,7 +67,31 @@
 					<div class="section-content agenda">
 						<div>
 							<span class="agenda-number">0</span>
-							<p><br>TBD!</p>
+							<p><span class="heading-small">Discuss</span><br>Did we learn things in this class? What did we learn?</p>
+						</div>
+						<div>
+							<span class="agenda-number">1</span>
+							<p><span class="heading-small">Workshop pt. 1</span><br>Recap the ever-confusing JavaScript stuff we learned last week</p>
+						</div>
+						<div>
+							<span class="agenda-number">2</span>
+							<p><span class="heading-small">Workshop pt. 2</span><br>Intermediate JavaScript that builds on the last lecture</p>
+						</div>
+						<div>
+							<span class="agenda-number">3</span>
+							<p><span class="heading-small">Workshop pt. 3</span><br>Advanced JavaScript that won’t make total sense quite yet</p>
+						</div>
+						<div>
+							<span class="agenda-number">4</span>
+							<p><span class="heading-small">Tutorial</span><br>How do you launch a website for a professional project?</p>
+						</div>
+						<div>
+							<span class="agenda-number">5</span>
+							<p><span class="heading-small">Meet</span><br><a href="https://docs.google.com/spreadsheets/d/1KXUkdULcAPe7tt3qQNqIKNJstu4EHPkujbu9-As1JPE/edit#gid=0" target="_blank">One-on-one’s</a> to talk about progress on the last project</p>
+						</div>
+						<div>
+							<span class="agenda-number">6</span>
+							<p><span class="heading-small">Homework</span><br>Finish <a href="../#project3">Final Project</a> (due next <strong>Friday!</strong>)</p>
 						</div>
 					</div>
 				</section>
@@ -81,17 +102,31 @@
 						<h3 class="heading-medium">Demos</h3>
 					</div>
 					<div class="section-content">
-						<a href="https://github.com/gabrieldrozdov/wp22" class="link-btn section-wide" target="_blank">Class Repository</a>
-						<a href="#" class="link-btn" target="_blank">TBD</a>
-					</div>
-				</section>
+						<a href="https://docs.google.com/spreadsheets/u/1/d/1KXUkdULcAPe7tt3qQNqIKNJstu4EHPkujbu9-As1JPE/edit?usp=sharing" class="link-btn section-wide" target="_blank">Student Websites</a>
 
-				<section id="weekly-resources" class="grid-4">
-					<div class="heading-section">
-						<div class="section-bar"></div>
-						<h3 class="heading-medium">Resources</h3>
-					</div>
-					<div class="section-content resources">
+						<h4 class="heading-small demos-subheading">Review from Week 3</h4>
+							<a href="https://www.w3schools.com/js/js_whereto.asp" class="link-btn" target="_blank">&lt;script&gt;</a>
+							<a href="https://www.w3schools.com/jsref/met_console_log.asp" class="link-btn" target="_blank">console.log()</a>
+							<a href="https://www.w3schools.com/js/js_let.asp" class="link-btn" target="_blank">let ___ = ___</a>
+							<a href="https://www.w3schools.com/js/js_datatypes.asp" class="link-btn" target="_blank">Data Types</a>
+							<a href="https://www.w3schools.com/jsref/met_document_queryselector.asp" class="link-btn" target="_blank">.querySelector()</a>
+							<a href="https://www.w3schools.com/jsref/prop_element_classlist.asp" class="link-btn" target="_blank">.classList</a>
+							<a href="https://www.w3schools.com/jsref/prop_html_style.asp" class="link-btn" target="_blank">.style.___</a>
+							<a href="https://www.w3schools.com/jsref/event_onclick.asp" class="link-btn" target="_blank">onclick="___"</a>
+							<a href="https://www.w3schools.com/js/js_functions.asp" class="link-btn" target="_blank">function()</a>
+							<a href="https://www.w3schools.com/jsref/dom_obj_style.asp" class="link-btn section-wide" target="_blank">All Style Properties</a>
+							<a href="https://www.w3schools.com/js/js_events.asp" class="link-btn section-wide" target="_blank">Common HTML Events</a>
+
+						<h4 class="heading-small demos-subheading">Intermediate JavaScript</h4>
+							<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" class="link-btn" target="_blank">.innerHTML = "___"</a>
+							<a href="https://www.w3schools.com/jsref/met_document_addeventlistener.asp" class="link-btn" target="_blank">.addEventListener</a>
+							<a href="https://www.w3schools.com/jsref/met_win_setinterval.asp" class="link-btn" target="_blank">setInterval(function(){___}, ___)</a>
+
+						<h4 class="heading-small demos-subheading">Advanced JavaScript</h4>
+							<a href="https://www.w3schools.com/js/js_if_else.asp" class="link-btn" target="_blank">if (___) {___}</a>
+							<a href="https://www.w3schools.com/js/js_loop_while.asp" class="link-btn" target="_blank">while (___) {___}</a>
+							<a href="https://www.w3schools.com/js/js_loop_for.asp" class="link-btn" target="_blank">for (___) {___}</a>
+							<a href="https://www.w3schools.com/js/js_arrays.asp" class="link-btn" target="_blank">Arrays</a>
 					</div>
 				</section>
 

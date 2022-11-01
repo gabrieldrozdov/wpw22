@@ -3,21 +3,35 @@
 /* Sans Serif */
 
 @font-face {
-	font-family: 'Maru Proportional';
-	src: url("assets/Inter.ttf") format("TrueType");
+	font-family: 'RedHat';
+	src: url("assets/RedHatText.ttf") format("TrueType");
 	font-weight: normal;
 	font-style: normal;
-	font-variation-settings: "wght" 400, "slnt" 0;
+	font-variation-settings: "wght" 400;
+}
+@font-face {
+	font-family: 'RedHat';
+	src: url("assets/RedHatText-Italic.ttf") format("TrueType");
+	font-weight: normal;
+	font-style: italic;
+	font-variation-settings: "wght" 400;
 }
 
 /* Monospace */
 
 @font-face {
-	font-family: 'Maru Mono';
-	src: url("assets/Inter.ttf") format("TrueType");
+	font-family: 'RedHatMono';
+	src: url("assets/RedHatMono.ttf") format("TrueType");
 	font-weight: normal;
 	font-style: normal;
-	font-variation-settings: "wght" 50, "slnt" 0;
+	font-variation-settings: "wght" 400;
+}
+@font-face {
+	font-family: 'RedHatMono';
+	src: url("assets/RedHatMono-Italic.ttf") format("TrueType");
+	font-weight: normal;
+	font-style: italic;
+	font-variation-settings: "wght" 400;
 }
 
 /* ------------- BASE STYLES ------------- */
@@ -44,13 +58,13 @@ html {
 	scroll-margin-top: 119px;
 }
 body {
-	font-family: Maru Proportional, sans-serif;
+	font-family: "RedHat", sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	color: var(--black);
-	font-variation-settings: "wght" 400, "slnt" 0;
+	font-variation-settings: "wght" 300;
 	font-size: 24px;
 	line-height: 1.4em;
 	cursor: none;
@@ -74,7 +88,7 @@ a:active {
 	opacity: .5;
 }
 strong {
-	font-variation-settings: "wght" 600, "slnt" 0;
+	font-variation-settings: "wght" 500;
 }
 canvas {
 	position:fixed;
@@ -121,12 +135,20 @@ canvas {
 }
 
 /* Link Buttons */
+@keyframes link-hover {
+	from {
+		font-variation-settings: "wght" 600;
+	}
+	to {
+		font-variation-settings: "wght" 300;
+  }
+}
 .link-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 24px;
-	font-variation-settings: "wght" 700, "slnt" 0;
+	font-variation-settings: "wght" 600;
 	line-height: 1.2em;
 	text-align: center;
 	text-decoration: none;
@@ -141,7 +163,7 @@ canvas {
 	color: var(--yellow);
 	background-color: var(--black);
 	border-radius: 20px;
-	animation-name: heading-main;
+	animation-name: link-hover;
 	animation-direction: alternate;
 	animation-duration: .5s;
 	animation-timing-function: ease-in-out;
@@ -166,42 +188,41 @@ canvas {
 	padding: 20px;
 }
 .heading-large {
-	font-family: Maru Mono, sans-serif;
+	font-family: "RedHatMono", sans-serif;
 	font-size: 36px;
-	font-variation-settings: "wght" 700, "slnt" 0;
+	font-variation-settings: "wght" 600;
 	letter-spacing: .1em;
 	line-height: 1em;
 	text-transform: uppercase;
 }
 .heading-medium {
-	font-family: Maru Mono, sans-serif;
+	font-family: "RedHatMono", sans-serif;
 	font-size: 24px;
-	font-variation-settings: "wght" 700, "slnt" 0;
+	font-variation-settings: "wght" 600;
 	letter-spacing: .1em;
 	line-height: 1.2em;
 	text-transform: uppercase;
 }
 .heading-small {
-	font-family: Maru Mono, sans-serif;
+	font-family: "RedHatMono", sans-serif;
 	font-size: 18px;
-	font-variation-settings: "wght" 700, "slnt" 0;
+	font-variation-settings: "wght" 600;
 	letter-spacing: .1em;
 	line-height: 1em;
 	text-transform: uppercase;
 }
 @keyframes heading-main {
 	from {
-		font-variation-settings: "wght" 800, "slnt" 0;
+		font-variation-settings: "wght" 700;
 	}
 	to {
-		font-variation-settings: "wght" 300, "slnt" -10;
+		font-variation-settings: "wght" 300;
   }
 }
 .heading-main {
-	font-family: Maru Mono, sans-serif;
+	font-family: "RedHatMono", sans-serif;
 	font-size: 72px;
-	font-variation-settings: "wght" 800, "slnt" 0;
-	letter-spacing: -.03em;
+	font-variation-settings: "wght" 700;
 	line-height: 1em;
 }
 .heading-main-animation span{
@@ -230,7 +251,7 @@ canvas {
 .weeks a {
 	text-transform: uppercase;
 	font-size: 12px;
-	font-variation-settings: "wght" 800, "slnt" 0;
+	font-variation-settings: "wght" 700;
 	letter-spacing: .1em;
 	background-color: var(--yellow);
 	text-decoration: none;
@@ -266,7 +287,7 @@ canvas {
 	margin-right: 40px;
 	font-size: 48px;
 	padding-bottom: 2px;
-	font-variation-settings: "wght" 800, "slnt" 0;
+	font-variation-settings: "wght" 700;
 	background-color: var(--black);
 	color: var(--yellow);
 	display: flex;
@@ -311,19 +332,19 @@ canvas {
 }
 .syllabus-nav li a {
   text-decoration: none;
-	font-variation-settings: "wght" 400, "slnt" 0;
+	font-variation-settings: "wght" 300;
   transition: font-variation-settings .2s;
 }
 .syllabus-nav li a:hover {
 	color: var(--yellow);
 }
 .nav-active {
-	font-variation-settings: "wght" 700, "slnt" 0 !important;
+	font-variation-settings: "wght" 600 !important;
 }
 .syllabus-menu {
 	text-transform: uppercase;
 	font-size: 12px;
-	font-variation-settings: "wght" 800, "slnt" 0;
+	font-variation-settings: "wght" 700;
 	letter-spacing: .1em;
 	line-height: 1em;
 	display: none;
@@ -486,9 +507,9 @@ footer a {
 
 /* Up Button */
 .up {
-	font-family: Maru Mono, sans-serif;
+	font-family: "RedHatMono", sans-serif;
 	font-size: 24px;
-	font-variation-settings: "wght" 600, "slnt" 0;
+	font-variation-settings: "wght" 500;
 	color: var(--black);
 	letter-spacing: -.05em;
 	text-decoration: none;

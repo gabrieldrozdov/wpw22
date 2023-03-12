@@ -1,6 +1,6 @@
-# Workshop: Web Programming [Fall 2022]
+# Web Programming Workshop [RISD Fall 2022]
 - RISD Department of Graphic Design
-- Taught by Gabriel Drozdov {gdrozdov@risd.edu}
+- Taught by Gabriel Drozdov
 - **Location:** Design Center 407
 - **Time:** 4 Fridays, 8:00AM – 1:00PM
 - **Office Hours:** By Appointment
